@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User</title>
+    <!-- bootstrap css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        .heading{
+            font-weight: bold;
+            font-size: 3em;
+        }
+        body{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 class="heading text-center my-5 text-info">Random Users</h1>
+        <div class="card w-50 mx-auto px-2 py-5 mb-5 text-center">
+            <img id="image" src="my-bg2.png" class="card-img-top w-50 mx-auto rounded-circle" alt="...">
+            <div class="card-body">
+                <h1 id="name" class="card-title">Rownok Jahan</h1>
+                <h6>Email : <span id="email">mdrownokj@gmail.com</span></h6>
+                <h5>Location : <span id="street">5910</span>, <span id="street-name">Panchbibi Joypurhat</span></h5>
+                <h5>Country : <span id="country">Bangladesh</span></h5>
+                <button onclick="userButton()" class="btn btn-info fw-bold py-2">Random User</button>
+            </div>
+          </div>
+    </main>
+
+
+
+
+
+
+    <!-- bootstrap js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="d-flex justify-content-center align-items-center">
+    <div class="spinner-grow text-dark" role="status">
+        <span class="visually-hidden"></span>
+    </div>
+</div>
+
+const loader = document.querySelector('.spinner-grow');
+
+
+fetch(url)
+            .then(res => {
+                if (res.ok) { //or res.status == 200
+                    // setTimeout(() => { loader.style.display = 'none' }, 1000);
+                    // loader.style.display = 'block';
+                    return res.json();
+                }
+                else {
+                    searchResult.style.display = 'none';
+                    searchError.style.display = 'block';
+                    notFound.style.display = 'block';
+                    return notFound.innerText = `City Not Found!`;
+                }
+            })
+            .then(data => {
+                displayWeather(data);
+                weatherBackground(data);
+            })
+            .catch(err => displayError(err));
+    } -->
